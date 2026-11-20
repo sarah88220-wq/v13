@@ -438,7 +438,7 @@
     const rsvpBox = document.getElementById('rsvpBox');
 
     // ★ 請在此貼上你部署好的 Google Apps Script 網頁應用程式網址 ★
-    const SCRIPT_URL = '你的_GOOGLE_APPS_SCRIPT_網址';
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyn46d3poOWkptB-3IAaCV90p2CnPJQueIG8UThE496mr4Aw5TLba0nIB2pGQ7InJJ6IQ/exec';
 
     // 自動讀取網址參數 (例如 index.html?name=Mr.+John+Doe)
     window.addEventListener('DOMContentLoaded', () => {
@@ -488,7 +488,7 @@
         .replace(/,+$/, '')
         .trim();
 
-      if (!SCRIPT_URL || SCRIPT_URL === '你的_GOOGLE_APPS_SCRIPT_網址') {
+      if (!SCRIPT_URL || SCRIPT_URL === 'https://script.google.com/macros/s/AKfycbyn46d3poOWkptB-3IAaCV90p2CnPJQueIG8UThE496mr4Aw5TLba0nIB2pGQ7InJJ6IQ/exec') {
         statusEl.innerText = '⚠️ 請先設定 Google Apps Script 網址';
         return;
       }
