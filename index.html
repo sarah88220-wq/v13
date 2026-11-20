@@ -488,8 +488,8 @@
         .replace(/,+$/, '')
         .trim();
 
-     !SCRIPT_URL || SCRIPT_URL ===  'https://script.google.com/macros/s/AKfycbyn46d3poOWkptB-3IAaCV90p2CnPJQueIG8UThE496mr4Aw5TLba0nIB2pGQ7InJJ6IQ/exec' {
-        statusEl.innerText = '⚠️ 請先設定 Google Apps Script 網址';
+    if(!SCRIPT_URL || SCRIPT_URL ===  'https://script.google.com/macros/s/AKfycbwi9kE0fyLZU0lu_JcikreiyBQAZb0UmqNcI3IHeuSaPwMm-PHx5aAsraDZif_ecA1meQ/exec' ){
+        statusEl.innerText = 'https://script.google.com/macros/s/AKfycbwi9kE0fyLZU0lu_JcikreiyBQAZb0UmqNcI3IHeuSaPwMm-PHx5aAsraDZif_ecA1meQ/exec';
         return;
       }
 
